@@ -1,0 +1,14 @@
+<!-- Indices written at 4/7/09 10:40 AM -->
+
+<datastore-indexes>
+
+    <!-- Used 2 times in query history -->
+    <datastore-index kind="TravelNote" ancestor="true" source="auto"/>
+
+    <!-- Used 2 times in query history -->
+    <datastore-index kind="CarryRequest" ancestor="true" source="auto"/>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Origin" ancestor="true" source="auto"/>
+
+</datastore-indexes>

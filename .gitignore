@@ -1,0 +1,5 @@
+*.class
+*.out
+*.log
+*.jar
+war/peer_to_peer_courier/

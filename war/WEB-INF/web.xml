@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Peer_to_peer_courier.html</welcome-file>
+  </welcome-file-list>
+  
+  <!-- Servlets -->
+    <servlet>
+        <servlet-name>carryme</servlet-name>
+        <servlet-class>org.twgae.server.CarryServiceImpl</servlet-class>
+    </servlet>
+    <servlet>
+
+      <servlet-name>remoteLoggerServiceImpl</servlet-name>
+
+      <servlet-class>com.allen_sauer.gwt.log.server.RemoteLoggerServiceImpl</servlet-class>
+
+    </servlet>
+
+	<servlet-mapping>
+	  <servlet-name>remoteLoggerServiceImpl</servlet-name>
+	  <url-pattern>/peer_to_peer_courier/gwt-log</url-pattern>
+	</servlet-mapping>
+
+
+    <servlet-mapping>
+        <servlet-name>carryme</servlet-name>
+	    <url-pattern>/peer_to_peer_courier</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
